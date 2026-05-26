@@ -1,13 +1,15 @@
 --- a/_jb_unittest_runner.py
 +++ b/_jb_unittest_runner.py
-@@ -7,6 +7,10 @@
- from teamcity import unittestpy
-
- if __name__ == '__main__':
+@@ -64,6 +64,12 @@
+ 
+ 
+ def main():
 +    if os.getenv("DJANGO_TEST_MODE_GAINARIE") is not None:
-+        import _jb_django_test_runner
-+        sys.exit(_jb_django_test_runner.main())
-+
++        try:
++            import _jb_django_test_runner
++            sys.exit(_jb_django_test_runner.main())
++        finally:
++            jb_finish_tests()
      path, targets, additional_args = jb_start_tests()
-
-     args = ["python -m unittest"]
+     args = build_unittest_args(path, targets, additional_args)
+     jb_doc_args("unittests", args)

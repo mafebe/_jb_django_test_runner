@@ -10,21 +10,15 @@ This is for PyCharm **Community** Edition which does not have any Django integra
 Tested on:
 - 2026.1
 - 2025.3
-- 2023.2.3
-- 2022.2
-- 2020.3.3
-- 2020.1
 
 Not supported:
-- ≤ 2019.2.3
+- ≤ 2025.2 (compatibility cutoff version could be lower)
 
 ### Python versions
 
 Tested on:
-- 3.9
-- 3.8
-- 3.7
-- 2.7
+- 3.14
+- 3.13
 
 Not supported:
 - < 2.7 (compatibility cutoff version could be lower)

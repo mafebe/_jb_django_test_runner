@@ -8,6 +8,8 @@ This is for PyCharm **Community** Edition which does not have any Django integra
 ### PyCharm versions
 
 Tested on:
+- 2026.1
+- 2025.3
 - 2023.2.3
 - 2022.2
 - 2020.3.3
